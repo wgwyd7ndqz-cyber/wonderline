@@ -1,0 +1,239 @@
+# Mercury Blueprint — Four Independent LLCs Under One EIN
+
+## Structure Overview
+- **Parent LLC / Holding Company**: Holds all LLCs and has the single EIN for IRS compliance.
+- **Mercury Account**: Main account linked to the parent LLC EIN.
+- **Four Independent LLCs**: Each LLC has its own sub-account and card(s) for full operational autonomy.
+- **Cards**: Assigned per LLC/sub-account; can be physical or virtual, depending on use.
+
+---
+
+## Sub-Accounts & Card Assignment
+
+| LLC Name           | Sub-Account Purpose                   | Card Assigned | Card Type           | Notes                                      |
+|-------------------|--------------------------------------|---------------|-------------------|-------------------------------------------|
+| LLC Alpha         | Independent operations & projects     | LLC Alpha Card | Physical + Virtual | Operates fully independently; own vendors, expenses, projects |
+| LLC Beta          | Independent ventures                  | LLC Beta Card  | Physical + Virtual | Manages its own cashflow and projects    |
+| LLC Gamma         | Marketing / Client Operations         | LLC Gamma Card | Physical + Virtual | Pays for campaigns, tools, and events    |
+| LLC Delta         | Real Estate / Asset Management        | LLC Delta Card | Physical + Virtual | Covers property-related expenses and investments |
+
+---
+
+## Operational Guidelines
+- Each sub-account is **autonomous**: each LLC manages its own spending, vendors, and projects.
+- All sub-accounts **roll up under the parent LLC EIN** for IRS reporting and Mercury compliance.
+- Cards are **tools for spending**: physical for in-person, virtual for online payments.
+- **Internal tracking**: Each LLC’s activity is tagged for self-auditing.
+- **Funding**: Each LLC can fund its sub-account independently or via internal transfers from holding funds.
+- **Scalability**: Additional LLCs or cards can be added later without opening a new Mercury account.
+
+---
+
+## Key Benefits
+- Independence: Each LLC operates as its own unit while still under one legal entity.
+- Compliance: Mercury sees a single EIN for reporting, but sub-accounts allow clear internal separation.
+- Flexibility: Cards and sub-accounts can be configured per LLC needs.
+- Self-auditing: Transactions across all sub-accounts are fully trackable under one account dashboard.
+- FDIC insured: All deposits are covered through Mercury’s partner banks.
+
+# Mercury Blueprint Addendum — Funding, Transfers & Self-Auditing Workflow
+
+## Funding Workflow
+1. **Parent / Holding Funds**
+   - Main account holds central liquidity under the parent LLC EIN.
+   - Optional: A "holding bucket" sub-account can store shared reserves or emergency funds.
+
+2. **Funding Sub-Accounts**
+   - Each LLC sub-account can be funded in two ways:
+     - **Direct funding:** LLC receives funds from clients, sales, or investments directly into its sub-account.
+     - **Internal transfer:** Holding funds are allocated to LLC sub-accounts via Mercury transfer or API.
+
+3. **Autonomous Control**
+   - Each LLC manages its sub-account independently for spending and operations.
+   - Funds can be moved freely from sub-account to vendors or expenses without touching other LLCs.
+
+---
+
+## Transfers & Operational Controls
+- **Internal Transfers:**  
+  - Parent account or other LLCs can move money into sub-accounts for projects, if authorized.
+  - Use Mercury’s API or dashboard for instant, traceable transfers.
+- **Card Spending:**  
+  - Each LLC card is tied to its sub-account.
+  - Transaction limits and spending rules are configurable per card.
+  - Alerts and notifications ensure all activity is captured for auditing.
+
+---
+
+## Self-Auditing Workflow
+1. **Transaction Tagging**
+   - Every transaction automatically records:
+     - Date/time
+     - Sub-account
+     - Card used
+     - Vendor / payment purpose
+   - Optional: Use categories (e.g., Marketing, Operations, Payroll, Real Estate) for more granular tracking.
+
+2. **Automated Reporting**
+   - Mercury dashboard provides live reporting for each sub-account.
+   - Aggregate reporting shows combined activity under the parent EIN.
+   - Integrates with QuickBooks, Xero, or other accounting software for:
+     - Reconciling accounts per LLC
+     - Generating IRS-ready reports
+     - Maintaining FDIC-insured balance visibility
+
+3. **Compliance & Oversight**
+   - All sub-account activity rolls up to the main account for **IRS and regulatory compliance**.
+   - Internal rules or operating agreements define spending autonomy, approval thresholds, and fund allocation for each LLC.
+   - Optional: Regular audits or automated checks can flag unusual transactions.
+
+---
+
+## Key Notes
+- **LLC Autonomy:** Each LLC handles its own projects and expenses fully independently.
+- **Centralized Reporting:** Even though LLCs are independent, all activity is visible under one Mercury EIN account.
+- **Scalable:** New sub-accounts and cards can be added as more LLCs or projects are created.
+- **Security & Compliance:** FDIC-insured deposits, KYC-verified card users, and audit-ready reporting.
+
+
+
+flowchart TD
+    %% TRUST LAYER
+    A[Unfold Holdings Trust] --> B[Holding LLC / Parent LLC (EIN)]
+
+    %% SERIES / PODS
+    B --> C1[LLC Alpha - Pod 1]
+    B --> C2[LLC Beta - Pod 2]
+    B --> C3[LLC Gamma - Pod 3]
+    B --> C4[LLC Delta - Pod 4]
+
+    %% MERCURY SUB-ACCOUNTS
+    C1 --> D1[Mercury Sub-Account: LLC Alpha]
+    C2 --> D2[Mercury Sub-Account: LLC Beta]
+    C3 --> D3[Mercury Sub-Account: LLC Gamma]
+    C4 --> D4[Mercury Sub-Account: LLC Delta]
+
+    %% CARDS / OPERATORS
+    D1 --> E1[Card(s) for LLC Alpha Operator]
+    D2 --> E2[Card(s) for LLC Beta Operator]
+    D3 --> E3[Card(s) for LLC Gamma Operator]
+    D4 --> E4[Card(s) for LLC Delta Operator]
+
+    %% FLOW NOTES
+    classDef trust fill:#d6f0ff,stroke:#007acc,stroke-width:2px
+    classDef llc fill:#e3ffd9,stroke:#33aa33,stroke-width:2px
+    classDef mercury fill:#fff4cc,stroke:#cc9900,stroke-width:2px
+    classDef card fill:#ffd9d9,stroke:#cc3300,stroke-width:2px
+
+    class A trust
+    class B llc
+    class C1,C2,C3,C4 llc
+    class D1,D2,D3,D4 mercury
+    class E1,E2,E3,E4 card
+
+    %% Notes
+    click A "https://yournotes/TrustOverview" "Trust owns everything legally"
+    click B "https://yournotes/HoldingLLC" "Parent LLC rolls up all series"
+    click D1 "https://yournotes/MercurySubAccount" "Sub-account tracks financials per LLC/pod"
+# Mercury — Venture Debt & Cash Flow Tools
+
+## 1️⃣ Venture Debt / IO Mastercard Concept
+- Mercury offers an **IO Mastercard for startups**. It’s essentially a **corporate credit card** that is tied to your Mercury account, but with some “venture debt” characteristics.
+- How it works:
+  - You can spend on the card **without immediately reducing your cash in checking**, essentially giving you a short-term line of liquidity.
+  - Mercury sometimes structures this with startup-friendly terms, often with **no annual fee** and transparent repayment schedules.
+  - The idea is to give startups flexibility without a traditional credit line from a bank.
+- This is useful if you want **to fund projects quickly or experiment**, but without taking on traditional loans or banks’ slow underwriting.
+
+## 2️⃣ “Vending” / Cash Flow Automation Tools
+- Mercury also has features that help **automate payments, transfers, and internal cash flow management**, almost like a vending machine for your money:
+  - **Auto-pay & recurring transfers**: You can schedule automatic movements between sub-accounts or vendor payments.
+  - **Sub-account “buckets”**: You can have multiple sub-accounts under one business account to allocate money for projects, payroll, or investments.
+  - **Integration with APIs**: If you want to programmatically push money around, pay contractors, or move cash between ventures, Mercury’s API allows you to do that almost instantly.
+  - This means you can treat your Mercury account like a **dynamic operational hub** for multiple LLCs or projects.
+
+## 🔑 Why This Matters for You
+- It **keeps you away from traditional banks** and their slow bureaucracy.
+- Lets you **experiment and innovate** financially — allocate, fund, and scale projects quickly.
+- Provides **some liquidity flexibility** without taking on traditional loans.
+- Fits perfectly if you plan to run multiple ventures under a trust or holding company structure — each “bucket” can represent an LLC or a project.
+# 🎯 Mercury vs Relay — Feature & Capability Comparison
+
+## 🔹 Mercury (Tech‑First Fintech Business Banking)
+
+### ✅ Pros
+- Fast, fully digital onboarding (hours, not weeks)
+- Strong developer‑friendly API for automation & workflows
+- Deep integrations with tech stack:
+  - Stripe, Shopify, PayPal
+  - QuickBooks, Xero
+  - Plaid connectivity
+- Virtual and physical Mastercard business debit & credit cards
+- Multiple sub‑accounts / buckets for projects/entities
+- Instant virtual cards for team spending control
+- FDIC insurance via partner banks
+- Modern dashboard built for startups & tech companies
+
+### ⚠️ Cons
+- Not a traditional bank (fintech layer on partner banks)
+- Account compliance holds/restrictions can appear
+- Wire transfer fees & limitations compared to some fintechs
+- No built‑in lending or credit products (beyond IO Mastercard)
+- Not as many sub‑accounts as Relay by default
+
+## 🔹 Relay (Digital Business Banking with Multi‑Account Focus)
+
+### ✅ Pros
+- Fully digital — no branches, no traditional bank overhead
+- Supports up to ~20 separate checking accounts under one entity
+- Up to ~2 savings accounts with yield (APY)
+- High number of cards (up to ~50) for team control
+- Physical and virtual Visa debit cards
+- FDIC insurance via partner bank (Thread Bank)
+- Integrations with core platforms:
+  - QuickBooks Online
+  - Xero
+  - Stripe, Square, Shopify
+  - Plaid support for wide app connectivity
+- Great for detailed cashflow organization (multiple buckets)
+
+### ⚠️ Cons
+- Not a traditional bank (fintech partner structure)
+- Outgoing wires may have fees depending on plan
+- Customer support sometimes slower or less responsive
+- API integrations exist, but not as mature/developer‑centric as Mercury
+- No built‑in credit or lending products
+- Some fintech limitations in advanced treasury tooling
+
+---
+
+## 📌 High‑Level Comparison (Tech Priorities)
+
+| Feature                                         | **Mercury** | **Relay** |
+|-------------------------------------------------|:-----------:|:---------:|
+| Digital onboarding                              | ⭐⭐⭐⭐       | ⭐⭐⭐⭐     |
+| Developer/API capabilities                       | ⭐⭐⭐⭐       | ⭐⭐⭐      |
+| Integrations (Stripe, Shopify, QuickBooks, etc.) | ⭐⭐⭐⭐       | ⭐⭐⭐⭐     |
+| Multi checking accounts                         | ⭐⭐⭐        | ⭐⭐⭐⭐     |
+| Team cards (physical + virtual)                  | ⭐⭐⭐⭐       | ⭐⭐⭐⭐     |
+| FDIC insured via partner bank                    | ⭐⭐⭐⭐       | ⭐⭐⭐⭐     |
+| Non‑traditional (no brick & mortar)              | ⭐⭐⭐⭐       | ⭐⭐⭐⭐     |
+| LD lending/credit products                       | ⭐⭐         | ⭐⭐       |
+| Strong treasury features                         | ⭐⭐⭐        | ⭐⭐⭐      |
+| Risk of account compliance freezes/holds         | ⚠️           | ⚠️        |
+
+---
+
+## 📌 Quick Summary
+
+**Mercury** → Best if you want:
+- High tech integration and automation
+- Developer API access
+- Fast onboarding and modern startup feel
+- Solid ecosystem connections
+
+**Relay** → Best if you want:
+- Maximum organization with multiple sub‑accounts
+- High number of team cards and spend buckets
+- Straightforward use without traditional bank hassles
+- Simpler, flat‑fee or free account experience
